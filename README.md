@@ -1,3 +1,17 @@
-# apple-ui-clone
+# Apple Homepage Clone
 
-A polished recreation of Apple's homepage built to practice modern UI development, responsive layouts, and creating polished user experiences.
+A frontend recreation of Apple's homepage built to strengthen my HTML, CSS, and JavaScript skills while practicing modern UI implementation.
+
+## 🚀 Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+
+## 🎯 Project Goals
+
+- Recreate Apple's homepage UI
+- Practice semantic HTML
+- Improve CSS layout and styling
+- Strengthen JavaScript fundamentals
+- Build a responsive version in the future
