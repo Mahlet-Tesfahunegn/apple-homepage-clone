@@ -1,21 +1,24 @@
 body{
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
 
 nav{
-    height: 45px;
-    background-color: #1d1d1f;
+    height: 43px;
+    background-color: rgba(20, 20, 20, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
+    width:100%;
+    position: fixed;
+    padding:0px 30px;
 }
 nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    padding:5px 50px;
+    gap: 45px;
     margin:0;
     list-style-type: none;
 
@@ -45,7 +48,10 @@ nav ul li a{
     background-color: rgb(26, 25, 25);
 
     height:500px;
-    padding: 50px 10px;
+    padding: 60px 30px;
+    margin-bottom: 10px;
+    gap:5px;
+    
 }
 
 .hero-section p{
@@ -54,22 +60,24 @@ nav ul li a{
 }
 
 .hero-title{
-    font-size: 56px;
+    font-size: 55px;
     font-weight:600;
     margin:0;
-    margin-bottom: 5px;
 }
 
 .hero-desc{
-    font-size: 26px;
+    font-size: 28px;
     margin:0;
-    margin-bottom: 5px;
+}
+
+.iphone-17{
+    margin-top:30px;
 }
 
 .btns{
     display: flex;
     gap:15px;
-    margin-top: 12px;
+    margin-top: 5px;
     
 }
 
@@ -104,4 +112,160 @@ button{
 
 .product-section p{
     color: black;
+}
+
+.mac-book-section{
+    background-image: url(resources/4-hero_macbook_air_m5__eb1idggd120y_large.jpg);
+}
+.mac-book-section p{
+    color:black
+}
+
+.two-sections{
+    display: flex;
+    width:100%;
+    align-items: flex-start;
+    
+}
+
+.ipad{
+    background-image: url(resources/5-promo_ipad_air_m4__bgcv7t286k8y_large.jpg);
+    width: 50%;
+    margin-top:6px;
+    margin-right:6px;
+    margin-bottom: 6px;
+    margin-left:13px;
+    padding: 25px 30px;
+}
+
+.macBook-pro{
+    background-image: url(resources/6-promo_macbook_pro__c9td9w1mc8ia_large.jpg);
+    width:50%;
+    margin-top:6px;
+    margin-left:6px;
+    margin-bottom: 6px;
+    margin-right:13px;
+    padding: 25px 30px;
+}
+
+.pro-title{
+    font-size: 39px;
+    margin-top:15px;
+}
+
+.pro-desc{
+    font-size:22px;
+    line-height: 24px;
+}
+
+.two-sections button{
+    font-size:15px;
+}
+.two-sections .learn-more-btn{
+    width:110px;
+    height: 37px;
+}
+
+.two-sections .buy-btn{
+    width:60px;
+    height: 37px;
+}
+
+.ipad p{
+    color:black;
+}
+
+.air-pod{
+    background-image: url(resources/7-promo_airpods_pro_3_wc__dtqp7mcsx0a6_small.jpg);
+    justify-content: end;
+    width:50%;
+    margin-top:6px;
+    margin-right:6px;
+    margin-bottom: 6px;
+    margin-left:13px;
+    padding: 45px 30px;
+}
+
+.watch{
+    background-image: url(resources/000-promo_apple_watch_series_11__gnlwqxe1jlu2_large.jpg);
+    width:50%;
+    margin-top:6px;
+    margin-left:6px;
+    margin-bottom: 6px;
+    margin-right:13px;
+    padding: 45px 30px;
+}
+
+.watch p{
+    color:black;
+}
+
+.air-pod .learn-more-btn{
+    background-color: white;
+    color:rgb(39, 38, 38);
+    border:1px solid white;
+}
+
+.air-pod .buy-btn{
+    border: 1px solid white;
+    color:white;
+}
+
+.air-pod .pro-desc{
+    width:250px;
+    font-size:20px;
+    text-align: center;
+}
+
+.watch .pro-title{
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.card{
+    background-image: url(resources/9-promo_apple_card__d8xz4kd4evwy_large.jpg);
+    width:50%;
+    margin-top:6px;
+    margin-left:6px;
+    margin-bottom: 6px;
+    margin-right:13px;
+    padding: 45px 30px;
+}
+
+.trade-in{
+    background-image: url(resources/8-promo_iphone_tradein__e4hrjxmgmf0i_large.jpg);
+    width:50%;
+    margin-top:6px;
+    margin-right:6px;
+    margin-bottom: 6px;
+    margin-left:13px;
+    padding: 45px 30px;
+}
+
+.trade-in p{
+    color:black;
+}
+
+.card p{
+    color:black;
+}
+
+.trade-card .pro-desc{
+    
+        width:250px;
+        font-size:20px;
+        text-align: center;
+    
+}
+
+.card .pro-desc{
+    width: 270px;
+}
+
+.trade-in .learn-more-btn{
+    width:150px;
+}
+
+.card .buy-btn{
+    width:100px;
 }
