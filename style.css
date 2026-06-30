@@ -4,7 +4,7 @@ body{
 }
 
 nav{
-    height: 50px;
+    height: 45px;
     background-color: #1d1d1f;
     display: flex;
     justify-content: center;
@@ -29,4 +29,79 @@ nav ul li a{
     margin-bottom:5px;
     font-weight: lighter;
 
+}
+
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    background-image: url(resources/1-hero_iphone_17_pro__dbaaq3mt8u2q_large.jpg);
+
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: rgb(26, 25, 25);
+
+    height:500px;
+    padding: 50px 10px;
+}
+
+.hero-section p{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-title{
+    font-size: 56px;
+    font-weight:600;
+    margin:0;
+    margin-bottom: 5px;
+}
+
+.hero-desc{
+    font-size: 26px;
+    margin:0;
+    margin-bottom: 5px;
+}
+
+.btns{
+    display: flex;
+    gap:15px;
+    margin-top: 12px;
+    
+}
+
+button{
+    border-radius: 25px;
+    width:140px;
+    height:47px;
+    border:1px solid #0066CC;
+    color: white;
+    font-size: 18px;
+}
+
+.learn-more-btn{
+    background-color: #0066CC;
+    
+    font-weight: 300;
+    
+    
+}
+
+.buy-btn{
+    background-color: transparent;
+    color:#0066CC;
+    width:78px;
+
+}
+
+.product-section{
+    background-image: url(resources/2-hero_iphone_17__ekga3xh1n5aq_large.jpg);
+
+}
+
+.product-section p{
+    color: black;
 }
