@@ -6,13 +6,15 @@ body{
 
 nav{
     height: 43px;
-    background-color: rgba(20, 20, 20, 0.8);
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     width:100%;
     position: fixed;
-    padding:0px 30px;
+    padding:0px 22px;
+    /* margin-left:162px; */
+    /* margin-right:162px; */
 }
 nav ul{
     display: flex;
@@ -25,7 +27,7 @@ nav ul{
 }
 
 nav ul li a{
-    color:#f5f5f7;
+    color:rgb(70, 68, 68);
     text-decoration: none;
     font-family:Arial, Helvetica, sans-serif ;
     font-size: 12px;
@@ -40,7 +42,7 @@ nav ul li a{
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    background-image: url(resources/1-hero_iphone_17_pro__dbaaq3mt8u2q_large.jpg);
+    background-image: url(resources/Desktop-UI/images/1-hero_macbook_air_m5__eb1idggd120y_large.jpg);
 
     background-size:cover;
     background-repeat: no-repeat;
@@ -55,7 +57,7 @@ nav ul li a{
 }
 
 .hero-section p{
-    color:white;
+    color:black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -70,9 +72,10 @@ nav ul li a{
     margin:0;
 }
 
-.iphone-17{
-    margin-top:30px;
+.mac-book{
+   padding-top:90px;
 }
+
 
 .btns{
     display: flex;
@@ -106,7 +109,7 @@ button{
 }
 
 .product-section{
-    background-image: url(resources/2-hero_iphone_17__ekga3xh1n5aq_large.jpg);
+    background-image: url(resources/Desktop-UI/images/2-hero_iphone_family__be5jkzxszb1e_large.jpg);
 
 }
 
@@ -114,11 +117,12 @@ button{
     color: black;
 }
 
-.mac-book-section{
-    background-image: url(resources/4-hero_macbook_air_m5__eb1idggd120y_large.jpg);
+.product-section .buy-btn{
+    width:140px;
 }
-.mac-book-section p{
-    color:black
+
+.ipad{
+    background-image: url(resources/Desktop-UI/images/3-promo_ipad_air_m4__bgcv7t286k8y_large.jpg);
 }
 
 .two-sections{
@@ -128,18 +132,14 @@ button{
     
 }
 
-.ipad{
-    background-image: url(resources/5-promo_ipad_air_m4__bgcv7t286k8y_large.jpg);
-    width: 50%;
-    margin-top:6px;
-    margin-right:6px;
-    margin-bottom: 6px;
-    margin-left:13px;
-    padding: 25px 30px;
+.two-sections p{
+    color:white;
 }
 
+
+
 .macBook-pro{
-    background-image: url(resources/6-promo_macbook_pro__c9td9w1mc8ia_large.jpg);
+    background-image: url(resources/Desktop-UI/images/4-promo_macbook_pro__c9td9w1mc8ia_large.jpg);
     width:50%;
     margin-top:6px;
     margin-left:6px;
@@ -176,7 +176,7 @@ button{
 }
 
 .air-pod{
-    background-image: url(resources/7-promo_airpods_pro_3_wc__dtqp7mcsx0a6_small.jpg);
+    background-image: url(resources/Desktop-UI/images/5-promo_airpods_pro_3__e4755qofhnyq_large.jpg);
     justify-content: end;
     width:50%;
     margin-top:6px;
