@@ -4,6 +4,11 @@ body{
     box-sizing:border-box;
 }
 
+.logo{
+    height: 20px;
+    width:20px;
+}
+
 nav{
     height: 43px;
     background-color: #fff;
@@ -128,15 +133,12 @@ button{
 .two-sections{
     display: flex;
     width:100%;
-    align-items: flex-start;
-    
+    align-items: flex-start;   
 }
 
 .two-sections p{
     color:white;
 }
-
-
 
 .macBook-pro{
     background-image: url(resources/Desktop-UI/images/4-promo_macbook_pro__c9td9w1mc8ia_large.jpg);
@@ -171,13 +173,9 @@ button{
     height: 37px;
 }
 
-.ipad p{
-    color:black;
-}
 
 .air-pod{
     background-image: url(resources/Desktop-UI/images/5-promo_airpods_pro_3__e4755qofhnyq_large.jpg);
-    justify-content: end;
     width:50%;
     margin-top:6px;
     margin-right:6px;
@@ -186,8 +184,17 @@ button{
     padding: 45px 30px;
 }
 
+.air-pod p{
+    color: black;
+}
+.air-pod .pro-desc{
+    width:250px;
+    font-size:20px;
+    text-align: center;
+} 
+
 .watch{
-    background-image: url(resources/000-promo_apple_watch_series_11__gnlwqxe1jlu2_large.jpg);
+    background-image: url(resources/Desktop-UI/images/6-promo_apple_watch_series_11__gnlwqxe1jlu2_large.jpg);
     width:50%;
     margin-top:6px;
     margin-left:6px;
@@ -199,8 +206,28 @@ button{
 .watch p{
     color:black;
 }
+.watch-logo{
+    height:35px;
+    width:35px;
+    
+}
+.iPad-pro{
+    background-image: url(resources/Desktop-UI/images/7-promo_ipad_pro__emtduc920o02_large.jpg);
+    width:50%;
+    margin-top:6px;
+    margin-left:6px;
+    margin-bottom: 6px;
+    margin-right:13px;
+    padding: 45px 30px;
 
-.air-pod .learn-more-btn{
+}
+
+.iPad-pro .pro-desc{
+    width:310px;
+    text-align: center;
+}
+
+/* .air-pod .learn-more-btn{
     background-color: white;
     color:rgb(39, 38, 38);
     border:1px solid white;
@@ -210,12 +237,8 @@ button{
     border: 1px solid white;
     color:white;
 }
+*/
 
-.air-pod .pro-desc{
-    width:250px;
-    font-size:20px;
-    text-align: center;
-}
 
 .watch .pro-title{
     font-weight: 500;
@@ -223,7 +246,7 @@ button{
 }
 
 .card{
-    background-image: url(resources/9-promo_apple_card__d8xz4kd4evwy_large.jpg);
+    background-image: url(resources/Desktop-UI/images/9-promo_apple_card__d8xz4kd4evwy_large.jpg);
     width:50%;
     margin-top:6px;
     margin-left:6px;
@@ -233,7 +256,7 @@ button{
 }
 
 .trade-in{
-    background-image: url(resources/8-promo_iphone_tradein__e4hrjxmgmf0i_large.jpg);
+    background-image: url(resources/Desktop-UI/images/8-promo_iphone_tradein__e4hrjxmgmf0i_large.jpg);
     width:50%;
     margin-top:6px;
     margin-right:6px;
@@ -268,4 +291,138 @@ button{
 
 .card .buy-btn{
     width:100px;
+}
+
+.entertaiment-section{
+    height:665px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.entertaiment-title p{
+    color:black;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:30px 0;
+    font-weight: bold;
+    height:25%;
+    margin:0;
+}
+
+.entertaiment-images{
+    display: flex;
+    height: 75%;
+}
+
+.entertaiment-images div{
+    margin-right:12px;
+    margin-bottom: 12px;
+}
+
+.entertaiment-cards-section{
+    height:304px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.cards-images{
+    display: flex;
+    width:417px;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.cards-images div{
+    margin-right:12px;
+}
+
+.small-img{
+    border: 1px solid black;
+    width:417px;
+    height: 234px;
+}
+
+.small-img img{
+    padding-left:15px;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-right:215px;
+    height:196px;
+    width:196px;
+    border-radius: 25px;
+}
+.entertaiment-cards-icons{
+    height: 20%;
+    margin-top:8px;
+    margin-bottom:10px
+}
+
+footer{
+    background-color: rgb(250, 247, 247);
+    height: 990px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    margin-left:162px;
+    margin-right:162px;
+}
+
+footer p, a{
+    color:gray;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.upper-footer{
+    height:90%;
+}
+
+.copyright-links-section{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.privacy-links{
+    display: flex;
+    /* justify-content: start; */
+    gap:10px;
+}
+
+.privacy-links ul{
+    display: flex;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    gap:10px;
+}
+
+.right-section a, 
+.privacy-links ul li a{
+    text-decoration: none;
 }
