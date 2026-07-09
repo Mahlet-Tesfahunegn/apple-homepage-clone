@@ -6,6 +6,7 @@
 body{
     font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: white;
+    overflow-x: hidden;
 } 
 
 .header {
@@ -81,7 +82,7 @@ main{
     justify-content: flex-start;
     align-items: center;
     height:580px;
-    padding:32px 30px;
+    padding:33px 30px;
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -92,7 +93,7 @@ main{
     background-image: url(../resources/Desktop-UI/images/1-hero_macbook_air_m5__eb1idggd120y_large.jpg);
 } 
 
-.hero-dark-content h1, .hero-dark-content p{
+.hero-dark-text h1, .hero-dark-text p{
     color:black;
 }  
 
@@ -146,185 +147,167 @@ main{
 
 }
 
-.shop-btn{
+.hero-long-btn{
     width:140px;
 }
 
-.ipad{
+.hero-ipad{
     background-image: url(../resources/Desktop-UI/images/3-promo_ipad_air_m4__bgcv7t286k8y_large.jpg);
+
 }
 
-.two-sections{
+.hero-ipad img{
+    margin-top:15px;
+    margin-bottom: -15px;
+}
+
+.visually-hidden{
+    display: none;
+}
+
+.promo-section{
+    margin:0px 12px;
+}
+.promo-grid{
     display: flex;
+    flex-wrap: wrap; 
+    /* gap:12px; */
     width:100%;
-    align-items: flex-start;   
 }
 
-.two-sections p{
+.promo-card{
+    width:50%;
+}
+
+
+.hero-light-text h1,
+.hero-light-text p{
     color:white;
 }
 
-.macBook-pro{
-    background-image: url(../resources/Desktop-UI/images/4-promo_macbook_pro__c9td9w1mc8ia_large.jpg);
-    width:50%;
-    margin-top:6px;
-    margin-left:6px;
-    margin-bottom: 6px;
-    margin-right:13px;
-    padding: 25px 30px;
-}
-
-.pro-title{
-    font-size: 39px;
+.promo-grid h1{
+    font-size: 2.5rem;
     margin-top:15px;
 }
 
-.pro-desc{
-    font-size:22px;
-    line-height: 24px;
-}
-
-.two-sections button{
-    font-size:15px;
-}
-.two-sections .learn-more-btn{
-    width:110px;
-    height: 37px;
-}
-
-.two-sections .buy-btn{
-    width:60px;
-    height: 37px;
-}
-
-
-.air-pod{
-    background-image: url(../resources/Desktop-UI/images/5-promo_airpods_pro_3__e4755qofhnyq_large.jpg);
-    width:50%;
-    margin-top:6px;
-    margin-right:6px;
-    margin-bottom: 6px;
-    margin-left:13px;
-    padding: 45px 30px;
-}
-
-.air-pod p{
-    color: black;
-}
-.air-pod .pro-desc{
-    width:250px;
-    font-size:20px;
+.promo-grid p{
+    font-size: 1.3rem;
+    line-height: 20px;
     text-align: center;
-} 
+}
+.promo-grid .hero-buttons a{
+    font-size:14px;
+    padding: 8px;
+    margin-top:10px;
+}
+.promo-grid .learn-more-btn{
+    width:107px;
+    height: 37px;
+}
 
-.watch{
+.promo-grid .buy-btn{
+    width:60px;
+    height: 36px;
+}
+
+.hero-macbook-pro{
+    background-image: url(../resources/Desktop-UI/images/4-promo_macbook_pro__c9td9w1mc8ia_large.jpg);
+}
+
+.hero-airpod{
+    background-image: url(../resources/Desktop-UI/images/5-promo_airpods_pro_3__e4755qofhnyq_large.jpg);
+}
+
+.hero-airpod p{
+    width:270px;
+    text-align: center;
+}
+ 
+.hero-watch{
     background-image: url(../resources/Desktop-UI/images/6-promo_apple_watch_series_11__gnlwqxe1jlu2_large.jpg);
     width:50%;
-    margin-top:6px;
-    margin-left:6px;
-    margin-bottom: 6px;
-    margin-right:13px;
-    padding: 45px 30px;
 }
 
-.watch p{
-    color:black;
+.hero-watch h1{
+    font-size: 2rem ;
+    margin-bottom: 3px;
+    font-weight: 500;
 }
-.watch-logo{
-    height:35px;
-    width:35px;
+
+.promo-brand-mark{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     
 }
-.iPad-pro{
-    background-image: url(../resources/Desktop-UI/images/7-promo_ipad_pro__emtduc920o02_large.jpg);
-    width:50%;
-    margin-top:6px;
-    margin-left:6px;
-    margin-bottom: 6px;
-    margin-right:13px;
-    padding: 45px 30px;
 
+.promo-brand-mark h1{
+    margin:0;
+}
+.hero-apple-logo{
+    height:38px;
+    width:38px; 
 }
 
-.iPad-pro .pro-desc{
-    width:310px;
+.hero-iPad-pro{
+    background-image: url(../resources/Desktop-UI/images/7-promo_ipad_pro__emtduc920o02_large.jpg);
+}
+
+.hero-iPad-pro p{
+    width:28ch;
     text-align: center;
 }
 
-/* .air-pod .learn-more-btn{
-    background-color: white;
-    color:rgb(39, 38, 38);
-    border:1px solid white;
-}
-
-.air-pod .buy-btn{
-    border: 1px solid white;
-    color:white;
-}
-*/
-
-
-.watch .pro-title{
-    font-weight: 500;
-    font-size: 32px;
-}
-
-.card{
-    background-image: url(../resources/Desktop-UI/images/9-promo_apple_card__d8xz4kd4evwy_large.jpg);
-    width:50%;
-    margin-top:6px;
-    margin-left:6px;
-    margin-bottom: 6px;
-    margin-right:13px;
-    padding: 45px 30px;
-}
-
-.trade-in{
+.hero-trade-in{
     background-image: url(../resources/Desktop-UI/images/8-promo_iphone_tradein__e4hrjxmgmf0i_large.jpg);
-    width:50%;
-    margin-top:6px;
-    margin-right:6px;
-    margin-bottom: 6px;
-    margin-left:13px;
-    padding: 45px 30px;
 }
 
-.trade-in p{
-    color:black;
+
+.hero-card{
+    background-image: url(../resources/Desktop-UI/images/9-promo_apple_card__d8xz4kd4evwy_large.jpg);
 }
 
-.card p{
-    color:black;
+.hero-trade-in p{
+    width:250px;
+    font-size:20px;
+    text-align: center;  
 }
 
-.trade-card .pro-desc{
-    
-        width:250px;
-        font-size:20px;
-        text-align: center;
-    
+sup{
+    font-size: 0.7rem;
 }
 
-.card .pro-desc{
+.hero-card p{
     width: 270px;
 }
 
-.trade-in .learn-more-btn{
+.hero-trade-in .learn-more-btn{
     width:150px;
 }
 
-.card .buy-btn{
+.hero-card .buy-btn{
     width:100px;
 }
+
 
 .entertaiment-section{
     height:665px;
     background-color: whitesmoke;
+    background-attachment: scroll;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 8px;
+    overflow-x: auto;
+    overflow-y:hidden;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style:none;
+
+}
+.entertaiment-section::-webkit-scrollbar{
+    display:none;
 }
 
 .entertaiment-title p{
@@ -336,6 +319,7 @@ main{
     font-weight: bold;
     height:25%;
     margin:0;
+    position: sticky;
 }
 
 .entertaiment-images{
@@ -346,54 +330,13 @@ main{
 .entertaiment-images div{
     margin-right:12px;
     margin-bottom: 12px;
+    flex:0 0 400px;
+    flex-wrap: nowrap;
 }
 
-.entertaiment-cards-section{
-    height:304px;
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-}
-
-.cards-images{
-    display: flex;
-    width:417px;
-    height: 80%;
-    justify-content: space-between;
-}
-
-.cards-images div{
-    margin-right:12px;
-}
-
-.small-img{
-    border: 1px solid black;
-    width:417px;
-    height: 234px;
-}
-
-.small-img img{
-    padding-left:15px;
-    padding-top:15px;
-    padding-bottom:15px;
-    padding-right:215px;
-    height:196px;
-    width:196px;
-    border-radius: 25px;
-}
-.entertaiment-cards-icons{
-    height: 20%;
-    margin-top:8px;
-    margin-bottom:10px
-}
 
 footer{
-    background-color: rgb(250, 247, 247);
+    background-color: whitesmoke;
     height: 990px;
     display: flex;
     flex-direction: column;
@@ -448,5 +391,38 @@ footer p, a{
 
 .right-section a, 
 .privacy-links ul li a{
+    text-decoration: none;
+}
+
+.author-section{
+    height:40px;
+    width:100%;
+    background:linear-gradient(
+        rgb(20, 84, 104), rgb(134, 26, 134)
+    );
+    color:rgb(163, 158, 158);
+    text-align: center;
+    padding:10px;
+    font-size: 13px;
+    display: flex;
+    gap:8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-name{
+    font-weight: bold;
+    color:whitesmoke;
+}
+
+.dot{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-top:3px
+}
+
+.author-section a{
     text-decoration: none;
 }
