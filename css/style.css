@@ -6,7 +6,7 @@
 body{
     font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: white;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 } 
 
 .header {
@@ -290,139 +290,153 @@ sup{
 }
 
 
-.entertaiment-section{
-    height:665px;
-    background-color: whitesmoke;
-    background-attachment: scroll;
-    display: flex;
+.entertainment-section{
+    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 957px;
+    background-color: whitesmoke;
+    padding: 30px 12px;
+    gap:20px;
+}
+
+.entertainment-header h1{
+    font-size: 57px;
+    font-weight:500;
+    letter-spacing:-0.85px;
+}
+.entertainment-carousel{
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+    overflow-y: hidden;
     overflow-x: auto;
-    overflow-y:hidden;
-    width: 100%;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style:none;
-
-}
-.entertaiment-section::-webkit-scrollbar{
-    display:none;
 }
 
-.entertaiment-title p{
-    color:black;
-    text-align: center;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding:30px 0;
-    font-weight: bold;
-    height:25%;
-    margin:0;
-    position: sticky;
-}
-
-.entertaiment-images{
-    display: flex;
-    height: 75%;
-}
-
-.entertaiment-images div{
-    margin-right:12px;
-    margin-bottom: 12px;
-    flex:0 0 400px;
+.featured-gallery{
+    display:flex;
+    gap:12px;
+    overflow-y: hidden;
+    overflow-x: auto;
     flex-wrap: nowrap;
 }
 
-
-footer{
-    background-color: whitesmoke;
-    height: 990px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
-    margin-left:162px;
-    margin-right:162px;
+.entertainment-large-card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:523px;
+    width:930px;
+    position:relative;
+    flex-shrink:0;
 }
 
-footer p, a{
-    color:gray;
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.upper-footer{
-    height:90%;
-}
-
-.copyright-links-section{
-    display: flex;
-    justify-content:space-between;
+.entertainment-description{
+    display:flex;
+    justify-content:center;
     align-items:center;
+    position:absolute;
+    bottom:40px;
+    left:50px;
+    gap:12px;
+    
 }
 
-.left-section{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-}
-
-.right-section{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-
-.privacy-links{
-    display: flex;
-    /* justify-content: start; */
-    gap:10px;
-}
-
-.privacy-links ul{
-    display: flex;
+.stream-button{
+    font-size:18px;
+    font-weight:400;
+    letter-spacing:-0.80px;
+    background-color: white;
+    color:rgb(24, 24, 24);
+    padding:8px;
+    width:133px;
+    height:43px;
+    border-radius: 25px;
+    text-align:center;
     margin:0;
-    padding:0;
-    list-style-type: none;
+}
+
+.card-description{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     gap:10px;
 }
 
-.right-section a, 
-.privacy-links ul li a{
-    text-decoration: none;
+.entertainment-description p{
+    color:white;
+    font-size:20px;
+    margin:0;
 }
 
-.author-section{
-    height:40px;
-    width:100%;
-    background:linear-gradient(
-        rgb(20, 84, 104), rgb(134, 26, 134)
-    );
-    color:rgb(163, 158, 158);
-    text-align: center;
-    padding:10px;
-    font-size: 13px;
-    display: flex;
-    gap:8px;
-    justify-content: center;
-    align-items: center;
+.desc-title{
+    font-weight:700;
 }
 
-.author-name{
-    font-weight: bold;
-    color:whitesmoke;
+.desc-text{ 
+    font-weight:500;
 }
 
-.dot{
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: gray;
-    margin-top:3px
+.description-devider{
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background-color: #fff;
+    margin-top:3px;
 }
 
-.author-section a{
-    text-decoration: none;
+.card-1{
+    background-image: url(../resources/Desktop-UI/images/10.1-980x522sr.jpg);
 }
+
+.card-2{
+    background-image:url(../resources/Desktop-UI/images/10.2-980x522sr\ \(2\).jpg)
+}
+
+.card-3{
+    background-image: url(../resources/Desktop-UI/images/10.3-980x522sr.jpg);
+}
+
+.card-4{
+    background-image: url(../resources/Desktop-UI/images/10.4-980x522sr.jpg);
+}
+
+.card-5{
+    background-image: url(../resources/Desktop-UI/images/10.5-980x522sr.jpg);
+}
+.card-5 .stream-button{
+    width: 160px;
+}
+
+.card-6{
+    background-image: url(../resources/Desktop-UI/images/10.6-980x522sr.jpg);
+}
+
+.card-7{
+    background-image: url(../resources/Desktop-UI/images/10.7-980x522sr.jpg);
+}
+.card-8{
+    background-image: url(../resources/Desktop-UI/images/10.8-980x522sr.jpg);
+}
+.card-9{
+    background-image: url(../resources/Desktop-UI/images/10.9-980x522sr.jpg);
+}
+
+
+.card-7 .stream-button,
+.card-9 .stream-button{
+    width: 170px;
+}
+.secondary-gallery{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    height: 247px;
+}
+footer{
+    height:900px;
+    background-color: whitesmoke;
+}
+
