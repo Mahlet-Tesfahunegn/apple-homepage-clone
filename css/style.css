@@ -4,9 +4,8 @@
 } 
 
 body{
-    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";  
     background-color: white;
-    /* overflow-x: hidden; */
 } 
 
 .header {
@@ -120,7 +119,7 @@ main{
     border:1px solid rgb(0, 113, 227); 
     text-decoration: none;
     text-align: center;
-    padding: 12px;
+    padding: 9px;
     margin-top:12px;
 } 
 
@@ -293,8 +292,6 @@ sup{
 .entertainment-section{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 957px;
     background-color: whitesmoke;
     padding: 30px 12px;
@@ -305,14 +302,16 @@ sup{
     font-size: 57px;
     font-weight:500;
     letter-spacing:-0.85px;
+    text-align:center;
 }
 .entertainment-carousel{
     display:flex;
     flex-direction: column;
     gap:12px;
-    overflow-y: hidden;
-    overflow-x: auto;
+
 }
+
+
 
 .featured-gallery{
     display:flex;
@@ -320,6 +319,14 @@ sup{
     overflow-y: hidden;
     overflow-x: auto;
     flex-wrap: nowrap;
+    scrollbar-width:none;
+    -ms-overflowo-style:none;
+    scroll-behavior:smooth;
+    -webkit-overflow-scrolling:touch;
+}
+
+.featured-gallery::-webkit-scrollbar{
+    display:none;
 }
 
 .entertainment-large-card{
@@ -334,12 +341,12 @@ sup{
 
 .entertainment-description{
     display:flex;
-    justify-content:center;
-    align-items:center;
     position:absolute;
     bottom:40px;
     left:50px;
     gap:12px;
+    justify-content:center;
+    align-items:center;
     
 }
 
@@ -359,9 +366,9 @@ sup{
 
 .card-description{
     display:flex;
-    justify-content: center;
-    align-items: center;
     gap:10px;
+    align-items:center;
+    text-shadow: 0 0 2px black;
 }
 
 .entertainment-description p{
@@ -386,55 +393,152 @@ sup{
     margin-top:3px;
 }
 
-.card-1{
+.featured-card-1{
     background-image: url(../resources/Desktop-UI/images/10.1-980x522sr.jpg);
 }
 
-.card-2{
+.featured-card-2{
     background-image:url(../resources/Desktop-UI/images/10.2-980x522sr\ \(2\).jpg)
 }
 
-.card-3{
+.featured-card-3{
     background-image: url(../resources/Desktop-UI/images/10.3-980x522sr.jpg);
 }
 
-.card-4{
+.featured-card-4{
     background-image: url(../resources/Desktop-UI/images/10.4-980x522sr.jpg);
 }
 
-.card-5{
+.featured-card-5{
     background-image: url(../resources/Desktop-UI/images/10.5-980x522sr.jpg);
 }
-.card-5 .stream-button{
+.featured-card-5 .stream-button{
     width: 160px;
 }
 
-.card-6{
+.featured-card-6{
     background-image: url(../resources/Desktop-UI/images/10.6-980x522sr.jpg);
 }
 
-.card-7{
+.featured-card-7{
     background-image: url(../resources/Desktop-UI/images/10.7-980x522sr.jpg);
 }
-.card-8{
+.featured-card-8{
     background-image: url(../resources/Desktop-UI/images/10.8-980x522sr.jpg);
 }
-.card-9{
+.featured-card-9{
     background-image: url(../resources/Desktop-UI/images/10.9-980x522sr.jpg);
 }
 
 
-.card-7 .stream-button,
-.card-9 .stream-button{
+.featured-card-7 .stream-button,
+.featured-card-9 .stream-button{
     width: 170px;
 }
 .secondary-gallery{
     display:flex;
-    justify-content:center;
-    align-items:center;
     gap:12px;
     height: 247px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+    -webkit-overflow-scrolling:touch;
+    scroll-behavior:smooth;
 }
+.secondary-gallery::-webkit-scrollbar{
+    display:none;
+}
+
+.entertainment-small-card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:247px;
+    width:417px;
+    position:relative;
+    flex-shrink:0;
+}
+
+.entertainment-small-card .promo-brand-mark{
+    position:absolute;
+    top:12px;
+    right:15px;
+    color:white;
+    font-weight:500;
+    font-size:19px;
+}
+.entertainment-small-card .promo-brand-mark img{
+    width:20px;
+    height:20px;
+}
+
+.secondary-gallery .entertainment-description{
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    right:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.secondary-gallery .stream-button{
+    font-size:14px;
+    width: 90px;
+    height: 35px;
+    padding: 7px;
+
+}
+
+.secondary-gallery .entertainment-description p{
+    font-size:15px;
+    font-weight:700;
+}
+.entertainment-card-1{
+    background-image: url(../resources/Desktop-UI/images/11.1-196x196SC.DN01.jpg);
+}
+
+.entertainment-card-1 .entertainment-description,
+.entertainment-card-4 .entertainment-description,
+.entertainment-card-7 .entertainment-description{
+    left:300px;
+}
+.entertainment-card-2{
+    background-image: url(../resources/Desktop-UI/images/11.2-417x234.jpg);
+}
+
+.entertainment-card-3{
+    background-image: url(../resources/Desktop-UI/images/11.3-417x234.jpg);
+}
+
+.entertainment-card-3 .stream-button{
+    width: 100px;
+}
+
+.entertainment-card-4{
+    background-image: url(../resources/Desktop-UI/images/11.4-196x196sr.jpg);
+}
+
+.entertainment-card-5{
+    background-image: url(../resources/Desktop-UI/images/11.5-417x234.jpg);
+}
+
+.entertainment-card-6{
+    background-image: url(../resources/Desktop-UI/images/11.6-417x234.jpg);
+}
+
+.entertainment-card-7{
+    background-image: url(../resources/Desktop-UI/images/11.7-196x196SC.DN01.jpg);
+}
+
+.entertainment-card-8{
+    background-image: url(../resources/Desktop-UI/images/11.9-834x468.jpg);
+}
+
+.entertainment-card-9{
+    background-image: url(../resources/Desktop-UI/images/11.8-417x234.jpg);
+}
+
 footer{
     height:900px;
     background-color: whitesmoke;
