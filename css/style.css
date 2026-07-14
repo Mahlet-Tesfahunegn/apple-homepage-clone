@@ -438,7 +438,7 @@ sup{
 .secondary-gallery{
     display:flex;
     gap:12px;
-    height: 247px;
+    height: 234px;
     overflow-x:auto;
     overflow-y:hidden;
     scrollbar-width:none;
@@ -537,6 +537,20 @@ sup{
 
 .entertainment-card-9{
     background-image: url(../resources/Desktop-UI/images/11.8-417x234.jpg);
+}
+
+.dot-navigation{
+    display:flex;
+    justify-content: center;
+    gap:12px;
+    margin:8px;
+}
+
+.dot-navigation span{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background-color:gray;
 }
 
 footer{
