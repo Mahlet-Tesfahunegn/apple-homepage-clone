@@ -5,8 +5,8 @@
 
 body{
     font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";  
-    background-color: whitesmoke;
-} 
+    background-color: white;
+}
 
 .header {
     position: fixed;
@@ -48,7 +48,7 @@ body{
     text-decoration: none;
     font-size: 12px;
     font-weight:400;
-    letter-spacing: -0.01em;
+    /* letter-spacing: -0.01em; */
 } 
 
 .nav-right{
@@ -81,13 +81,12 @@ main{
     justify-content: flex-start;
     align-items: center;
     height:580px;
-    padding:33px 30px;
+    padding:34px 30px;
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
     margin-bottom: 12px; 
 } 
-
 .hero-macbook{
     background-image: url(../resources/Desktop-UI/images/1-hero_macbook_air_m5__eb1idggd120y_large.jpg);
 } 
@@ -108,18 +107,18 @@ main{
 
 .hero-buttons{
     display: flex;
-    gap:17px;
+    gap:14px;
     margin-top: 5px; 
 } 
 
 .hero-buttons a{
-    height:44px;
-    font-size: 17px; 
+    height:42px;
+    font-size: 18px; 
     border-radius: 25px;
     border:1px solid rgb(0, 113, 227); 
     text-decoration: none;
     text-align: center;
-    padding: 9px;
+    padding: 7px;
     margin-top:12px;
 } 
 
@@ -164,20 +163,13 @@ main{
     display: none;
 }
 
-.promo-section{
-    margin:0px 12px;
-}
 .promo-grid{
-    display: flex;
-    flex-wrap: wrap; 
-    /* gap:12px; */
-    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    column-gap:12px;
+    margin:0 12px;
+    min-height: 580px;
 }
-
-.promo-card{
-    width:50%;
-}
-
 
 .hero-light-text h1,
 .hero-light-text p{
@@ -187,26 +179,31 @@ main{
 .promo-grid h1{
     font-size: 2.5rem;
     margin-top:15px;
+    margin-bottom:4px;
 }
 
+.promo-card{
+    /* gap:5px; */
+    padding-top:3;
+}
 .promo-grid p{
     font-size: 1.3rem;
-    line-height: 20px;
+    line-height: 23px;
     text-align: center;
 }
 .promo-grid .hero-buttons a{
-    font-size:14px;
-    padding: 8px;
+    font-size:15px;
+    padding: 5px;
     margin-top:10px;
 }
 .promo-grid .learn-more-btn{
-    width:107px;
-    height: 37px;
+    width:104px;
+    height: 34px;
 }
 
 .promo-grid .buy-btn{
     width:60px;
-    height: 36px;
+    height: 34px;
 }
 
 .hero-macbook-pro{
@@ -224,12 +221,11 @@ main{
  
 .hero-watch{
     background-image: url(../resources/Desktop-UI/images/6-promo_apple_watch_series_11__gnlwqxe1jlu2_large.jpg);
-    width:50%;
 }
 
 .hero-watch h1{
     font-size: 2rem ;
-    margin-bottom: 3px;
+    margin-bottom: 15px;
     font-weight: 500;
 }
 
@@ -237,6 +233,7 @@ main{
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-top:20px;
     
 }
 
@@ -267,7 +264,7 @@ main{
 }
 
 .hero-trade-in p{
-    width:250px;
+    width:208px;
     font-size:20px;
     text-align: center;  
 }
@@ -281,7 +278,7 @@ sup{
 }
 
 .hero-trade-in .learn-more-btn{
-    width:150px;
+    width:140px;
 }
 
 .hero-card .buy-btn{
@@ -301,7 +298,6 @@ sup{
 .entertainment-header h1{
     font-size: 57px;
     font-weight:500;
-    letter-spacing:-0.85px;
     text-align:center;
 }
 .entertainment-carousel{
@@ -353,7 +349,6 @@ sup{
 .stream-button{
     font-size:18px;
     font-weight:400;
-    letter-spacing:-0.80px;
     background-color: white;
     color:rgb(24, 24, 24);
     padding:8px;
@@ -554,21 +549,23 @@ sup{
 }
 
 footer{
-    height:976px;
-    margin:0 120px;
-    padding: 0 22px;
+    height:996px;
+    margin:0;
+    padding: 0 142px;
     display:flex;
     flex-direction: column;
     gap:35px;
     color:gray;
     font-size:12.5px;
     flex-wrap: nowrap;
+    background-color: whitesmoke;
 }
 
 .footer-policy{
     display: flex;
     flex-direction: column;
     gap:10px;
+    
 }
 
 .footer-product-links{
@@ -609,7 +606,7 @@ footer{
 .footer-contact-section{
     display:flex;
     flex-direction: column;
-    gap:35px;
+    gap:20px;
 }
 
 .footer-contact-section p a{
@@ -621,6 +618,7 @@ footer{
     display: flex;
     justify-content: space-between;
     width:100%;
+   
 }
 
 .footer-privacy-links div{
@@ -631,11 +629,9 @@ footer{
 .footer-privacy-links ul{
     flex-direction: row;
     gap:0;
+    list-style-type: none;
+    
 }
 
-.footer-privacy-links li{
-    list-style-type:none;
-    padding:0px 10px;
-}
 
 
